@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich">
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript">
+        var websocket = null;
+
+        function connect() {
+            var wsProtocol = window.location.protocol == "https:" ? "wss" : "ws";
+            var wsURI = wsProtocol + '://' + window.location.host + window.location.pathname + 'websocket/message';
+            websocket = new WebSocket(wsURI);
+            websocket.onopen = function () {
+            };
+            websocket.onmessage = function (event) {
+                updateSchedule();
+            };
+            websocket.onerror = function (event) {
+            };
+            updateSchedule();
+        }
+
+        function updateSchedule() {
+            $("#table tr").remove();
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'http://localhost:8080/LIMS_war_exploded/rest/eventsByDay', false);
+            xhr.send();
+            if (xhr.status != 200) {
+                alert(xhr.status + ': ' + xhr.statusText); // пример вывода: 404: Not Found
+            } else {
+                obj = JSON.parse(xhr.responseText);
+                for (var i = 0; i &lt; obj.length; i++) {
+                    var $row = $('<tr><td>' + obj[i].patient.name + '</td><td>' + obj[i].date.hour + ':' + obj[i].date.minute + '</td></tr>');
+                    $('#table').find('tbody').append($row);
+                }
+            }
+        }
+    </script>
+</h:head>
+
+<h:body onload="connect()">
+    <h2>SCHEDULE</h2>
+        <h:dataTable id="table">
+        </h:dataTable>
+</h:body>
+</html>
