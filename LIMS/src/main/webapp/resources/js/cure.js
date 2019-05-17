@@ -1,0 +1,1 @@
+$('#type-select').select2({minimumResultsForSearch: -1, placeholder: "Select Type"});

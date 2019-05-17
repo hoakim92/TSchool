@@ -1,0 +1,110 @@
+#prescriptionTable {
+    position: relative;
+    margin-top: 25px;
+}
+
+#prescriptionTable tbody td {
+    padding: 10px;
+}
+
+#prescriptionTable td:nth-child(1) {
+    width: 100px;
+}
+
+#prescriptionTable td:nth-child(3) {
+    width: 100px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: right;
+}
+
+input[type="radio"]:checked+label {
+    background: cyan;
+}
+
+label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+
+label:hover {
+    background: #DDD;
+}
+
+input[type="radio"] {
+    opacity: 0.011;
+}
+
+.diagnosis-select {
+    width:330px;
+}
+
+.inputDateOnce {
+    width:280px;
+}
+
+.addDeleteButton{
+    width:25px;
+}
+
+.addRowButton {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width:28px;
+    height:28px;
+}
+
+.deleteRowButton {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width:28px;
+    height:28px;
+}
+
+#createPrescriptionBtn{
+    width: 200px;
+}
+
+#table-wrapper {
+    width: 80%;
+    /*position:relative;*/
+    /*width:900px;*/
+}
+
+#table-wrapper h4{
+    text-align: center;
+}
+
+#table-scroll {
+    position: relative;
+    /*width: 900px;*/
+    height:400px;
+    overflow:auto;
+    margin-top:20px;
+}
+
+#prescriptionTable{
+    width: 100%;
+    /*position: relative;*/
+    /*width: 900px;*/
+}
+
+#prescriptionTable td:nth-child(1) {
+    text-align: center;
+    width: 50%;
+}
+#prescriptionTable td:nth-child(2) {
+    text-align: center;
+    width: 25%;
+}
+#prescriptionTable td:nth-child(3) {
+    text-align: center;
+    width: 25%;
+}
+

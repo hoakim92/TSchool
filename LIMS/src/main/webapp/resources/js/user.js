@@ -1,0 +1,1 @@
+$('#role-select').select2({minimumResultsForSearch: -1, placeholder: "Select Role"});

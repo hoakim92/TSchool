@@ -1,0 +1,5 @@
+<div id="header">
+    <form action="${pageContext.request.contextPath}/logout" method="POST">
+        <input class="logOffButton" input type="submit" id="logoffBtn" value="LogOff">
+    </form>
+</div>

@@ -1,0 +1,62 @@
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<div id="sidebar">
+    <table id="navigationTable">
+        <sec:authorize access="hasRole('ADMIN')">
+            <tr>
+                <td
+                        <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('patients')}">class="hovertr"</c:if>>
+                    <a href="${pageContext.request.contextPath}/patients">PATIENTS</a>
+                </td>
+            </tr>
+            <tr>
+                <td
+                        <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('diagnosis')}">class="hovertr"</c:if>>
+                    <a href="${pageContext.request.contextPath}/diagnosis">DIAGNOSIS</a>
+                </td>
+            </tr>
+            <tr
+                    <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('doctors')}">class="hovertr"</c:if>>
+                <td>
+                    <a href="${pageContext.request.contextPath}/doctors">DOCTORS</a>
+                </td>
+            </tr>
+            <tr
+                    <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('prescriptions')}">class="hovertr"</c:if>>
+                <td>
+                    <a href="${pageContext.request.contextPath}/prescriptions">PRESCRIPTIONS</a>
+                </td>
+            </tr>
+            <tr
+                    <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('cures')}">class="hovertr"</c:if>>
+                <td>
+                    <a href="${pageContext.request.contextPath}/cures">CURES</a>
+                </td>
+            </tr>
+            <tr
+                    <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('users')}">class="hovertr"</c:if>>
+                <td>
+                    <a href="${pageContext.request.contextPath}/users">USERS</a>
+                </td>
+            </tr>
+            <%--<tr--%>
+                    <%--<c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('recommendations')}">class="hovertr"</c:if>>--%>
+                <%--<td>--%>
+                    <%--<a href="${pageContext.request.contextPath}/recommendations">RECOMMENDATIONS</a>--%>
+                <%--</td>--%>
+            <%--</tr>--%>
+            <tr
+                    <c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('statistics')}">class="hovertr"</c:if>>
+                <td>
+                    <a href="${pageContext.request.contextPath}/chart">STATISTICS</a>
+                </td>
+            </tr>
+        </sec:authorize>
+        <tr <sec:authorize access="hasRole('ADMIN')"><c:if test="${requestScope['javax.servlet.forward.request_uri'].contains('schedule')}">class="hovertr"</c:if></sec:authorize>>
+            <td>
+                <a href="${pageContext.request.contextPath}/schedule">EVENTS</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

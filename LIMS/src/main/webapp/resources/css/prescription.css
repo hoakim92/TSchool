@@ -1,0 +1,80 @@
+.daysOfWeek{
+    width:180px;
+}
+
+.addRowButton {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width:28px;
+    height:28px;
+}
+
+.deleteRowButton {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width:28px;
+    height:28px;
+}
+
+.inputDaysOfWeek{
+    width:220px;
+    height:25px;
+    font: bold 14px/28px"Open Sans", Arial;
+}
+
+#timePattern {
+    width:330px;
+}
+
+#cancelPlannedEvents {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    width: 150px;
+    height: 32px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+#table-wrapper {
+    width: 35%;
+    margin-left: 10%;
+    /*position:relative;*/
+    /*width:900px;*/
+}
+
+#table-wrapper h4{
+    text-align: center;
+}
+
+#table-scroll {
+    position: relative;
+    /*width: 900px;*/
+    height:400px;
+    overflow:auto;
+    margin-top:20px;
+}
+
+#eventsTable{
+    width: 100%;
+    /*position: relative;*/
+    /*width: 900px;*/
+}
+
+#eventsTable td:nth-child(1) {
+    text-align: center;
+    /*width: 50%;*/
+}
+
+#eventsTable td:nth-child(2) {
+    text-align: center;
+    /*width: 25%;*/
+}

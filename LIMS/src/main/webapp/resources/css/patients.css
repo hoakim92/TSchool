@@ -1,0 +1,27 @@
+.logOffButton {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.createPatientButton {
+    top: 5px;
+}
+
+input {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 14px/32px'Open Sans', sans-serif;
+    height: 34px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}

@@ -1,0 +1,188 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.toppane {
+    width: 100%;
+    height: 50px;
+    border-collapse: collapse;
+}
+
+.leftpane {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.middlepane {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.rightpane {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+}
+
+.logOffButton {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 75px;
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+tbody td {
+    padding: 10px;
+}
+
+.text-input {
+    width: 250px;
+}
+
+#doctors-select {
+    width: 250px;
+}
+
+#diagnosis-select {
+    width: 250px;
+}
+
+#cure-select {
+    width: 250px;
+}
+
+#dateOfBegin {
+    width: 250px;
+}
+
+#dateOfEnd {
+    width: 250px;
+}
+
+#editBtn {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    width: 75px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+#saveBtn {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    width: 75px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+#cancelBtn {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    width: 75px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+#createBtn {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px'Open Sans', sans-serif;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+input[type="radio"]:checked+label {
+    background: cyan;
+}
+
+label {
+    width: 90px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+
+label:hover {
+    background: #DDD;
+}
+
+input[type="radio"] {
+    opacity: 0.011;
+}

@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Open Sans", Arial;
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+}
+
+
+#sidebar {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+#content {
+    float: right;
+    width: 80%;
+    height: 280px;
+}
+
+#horizontal-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+#navigationTable {
+    margin-left: 20%;
+    text-align: center;
+    font-family: "Open Sans", Arial;
+}
+
+#navigationTable tbody td {
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#navigationTable tbody tr:hover {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.hovertr {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.listTable {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: "Open Sans", Arial;
+    width: 95%;
+    text-align: center;
+}
+
+
+.listTable thead th {
+    text-align: center;
+    background-color: #00BFFF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.listTable tbody td {
+    border: solid 1px #DDEEEE;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.listTable tbody tr:hover {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.entityTable {
+    position: relative;
+    font: 14px/28px "Open Sans", Arial;
+}
+
+.entityTable tbody td {
+    padding: 10px;
+}
+
+.entityTable td:nth-child(1) {
+    text-align: center;
+    width: 100px;
+}
+
+.entityTable td:nth-child(3) {
+    text-align: center;
+    width: 100px;
+}
+
+.logOffButton {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font: bold 14px/28px "Open Sans", Arial;
+}
+
+input[type="button"] {
+    padding: 0px;
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px "Open Sans", Arial;
+    width: 100px;
+    height: 32px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+
+input[type="submit"] {
+    padding: 0px;
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    font: bold 14px/28px "Open Sans", Arial;
+    width: 100px;
+    height: 32px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
+
+input {
+    padding: 5px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    font: 14px/28px "Open Sans", Arial;
+}
+
+input[type="text"] {
+    width: 360px;
+}
+
+input[type="date"] {
+    width: 360px;
+}
+
+input[type="time"] {
+    height: 28px;
+}
+
+input[type="datetime-local"] {
+    height: 28px;
+}
+
+select {
+    width: 360px;
+}
+
+.search-input {
+    text-align: center;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: #ffffff;
+}
+
+.select2-container-multi .select2-choices .select2-search-choice {
+    display: block;
+    float: none;
+}

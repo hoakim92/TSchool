@@ -1,0 +1,91 @@
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    width: 80%;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: 55px;
+}
+
+
+#sidebar {
+    float: left;
+    width: 20%;
+    height: 280px;
+}
+
+#content {
+    float: right;
+    width: 80%;
+    height: 280px;
+}
+
+#navigationTable {
+    margin-top: 25%;
+    border: 0px;
+    margin-left: 10%;
+}
+
+#navigationTable tbody td {
+
+}
+
+
+thead th {
+    text-align: center;
+    background-color: #00BFFF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+tbody td {
+    border: solid 1px #DDEEEE;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+tbody tr:hover {
+    background: #00BFFF;
+    color: #fff;
+}
+
+.logOffButton {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.createPatientButton {
+    top: 5px;
+}
+
+input {
+    background-color: #1E90FF;
+    border: solid 1px #1E5799;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 1px #fff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: bold 14px/32px'Open Sans', sans-serif;
+    height: 34px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #1E5799;
+}
