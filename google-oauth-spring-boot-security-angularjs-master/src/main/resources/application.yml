@@ -1,0 +1,32 @@
+server:
+  port: 8090
+
+security:
+  oauth2:
+    client:
+      clientId: 194194116264-q0vlec4aveber2lobomb404n5h1itqvg.apps.googleusercontent.com
+      clientSecret: boENiD23aCKl9bTHI_3yyAfZ
+      accessTokenUri: https://www.googleapis.com/oauth2/v4/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      clientAuthenticationScheme: form
+      scope:
+        - openid
+        - email
+        - profile
+    resource:
+      userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+      preferTokenInfo: true
+
+
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: postgres
+    url: jdbc:mysql://localhost:3306/medicalcrm?serverTimezone=UTC
+    username: admin
+    password: qwerty
+    driverClassName: com.mysql.cj.jdbc.Driver

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google OAuth2 Example</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+</head>
+
+<body ng-app="GoogleOAuthDemoApp" ng-controller="AppCtrl" ng-cloak>
+<div class="header" ng-show="user">
+    <div>
+        <button class="btn-logOff" ng-click="logout()"> LogOff</button>
+    </div>
+    <div id="pic"><img ng-src="{{user.userAuthentication.details.picture}}"></div>
+    <div id="email">{{user.userAuthentication.details.email}}</div>
+</div>
+
+<div class="content" ng-show="user">
+    <table id="events">
+        <thead>
+            <th>CURE</th>
+            <th>TYPE</th>
+            <th>DATE</th>
+        </thead>
+        <tr ng-repeat="event in events">
+            <td>{{event.cure}}</td>
+            <td>{{event.type}}</td>
+            <td>{{event.date.year}}/{{event.date.monthValue}}/{{event.date.dayOfMonth}} {{event.date.hour}}:{{event.date.minute}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="container">
+    <div class="card-signin" ng-show="!user">
+        <div class="card-body">
+            <div class="logo"></div>
+            <form class="form-signin" action="/google/login">
+                <div class="form-label-group">
+                    <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> SIGN IN WITH GOOGLE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Including Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>
